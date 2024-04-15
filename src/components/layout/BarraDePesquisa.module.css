@@ -1,0 +1,26 @@
+.barra_de_pesquisa {
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    font-size: 20px;
+}
+
+.div_icone_pesquisa {
+    display: flex;
+    background: #FFD700;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+.div_icone_pesquisa icon {
+    font-size: 20px;
+}
+
+.barra_de_pesquisa input {
+    border: none;
+    outline: none;
+    padding: 0 20px;
+}

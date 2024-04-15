@@ -1,0 +1,130 @@
+{
+    "instrumentos_cordas": [
+        {
+            "id": 1,
+            "nome": "Violino",
+            "preco": 3929.99,
+            "descricao": "Violino Artesanal Profissional Modelo Stradivarius fastrings.",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1712971487/z3zwanjeq16glv8fzedw.png"
+        },
+        {
+            "id": 2,
+            "nome": "Violino",
+            "preco": 1535.48,
+            "descricao": "Kit Violino Eagle Ve441 4/4 + Estojo Estante Espaleira Afinador Itens inclusos: 1 Violino Eagle Ve441 4/4 1 Estojo Eagle 1 Breu 1 Arco 1 Cavalete 1 Estante Partitura Dobrável 1",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713221535/rihh1vdf9pt5o8aiiww3.webp"
+        },
+        {
+            "id": 3,
+            "nome": "Viola",
+            "preco": 2635.89,
+            "descricao": "Viola Rolim Orquestra IIzuka Natural",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713222699/accxurnmaqhnz1xrwghd.webp"
+        },
+        {
+            "id": 4,
+            "nome": "Violoncelo",
+            "preco": 5563.49,
+            "descricao": "Violoncelo Custom 4/4 Arco E Breu Com Case",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713222476/gnny1q8scuzgt7rdon8z.webp"
+        },
+        {
+            "id": 41,
+            "nome": "Violão",
+            "preco": 265,
+            "descricao": "Violão Acústico Clássico Nylon GNA-111 Natural.",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1712974017/p8kndmlgwnxjesiwf9ym.webp"
+        }
+    ],
+    "instrumentos_madeiras": [
+        {
+            "id": 1,
+            "nome": "Flauta_tranvessal",
+            "preco": 504.27,
+            "descricao": "LADE 16 Furos C Flauta Chave Fechada com Saco de Armazenamento Tubo Aumentado Ressonância Instrumento Musical Flauta 16 Teclas de Latão Iniciante.",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1712973606/tsiyiypb3kdrqdk0y48z.webp"
+        },
+        {
+            "id": 2,
+            "nome": "oboe",
+            "preco": 1535.48,
+            "descricao": "Namolit Chave Oboé Profissional C Estilo semiautomático Chaves folheadas a prata Instrumento de sopro com luvas de palheta Oboé Estojo de couro",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713223085/k5n82h867nfps27z6lki.webp"
+        },
+        {
+            "id": 3,
+            "nome": "fagote",
+            "preco": 6035.67,
+            "descricao": "Instrumento Musical Profissional Fagote, HCL-720",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713223193/qay6qm83thbwisi2qeng.webp"
+        },
+        {
+            "id": 4,
+            "nome": "clarone",
+            "preco": 9380.26,
+            "descricao": "CLARONE ALFA GGBC 500",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713223362/xaixknfxtyorlbwpadrj.webp"
+        }
+    ],
+    "instrumentos_saxofones": [
+        {
+            "id": 2,
+            "nome": "sax_alto",
+            "preco": 5670.12,
+            "descricao": "Saxofone Alto Eagle Mib Laqueado Sa501",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713223850/boqzxulcwrhpno8z1zx7.webp"
+        },
+        {
+            "id": 1,
+            "nome": "Sax_tenor",
+            "preco": 3000.00,
+            "descricao": "LOUJIN Sib tenor saxofone sax corpo latão ouro superfície lacada instrumento de sopro com bolsa de transporte pano de limpeza escova sax alças",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1712972115/agzjm98erghsisnazp9t.webp"
+        },
+        {
+            "id": 3,
+            "nome": "sax_baritono",
+            "preco": 12849.84,
+            "descricao": "Saxofone Baritono Eb HBS-110L Laqueado - Harmonics",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713223989/qgfvqm7de4kqsxdjzs9a.webp"
+        },
+        {
+            "id": 4,
+            "nome": "sax_baixo",
+            "preco": 22988.60,
+            "descricao": "Saxofone Baixo SHELTER - TJS 6432L",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713224203/pdvwzz3y4rennkawzult.webp"
+        }
+
+    ],
+    "instrumentos_metais": [
+        {
+            "id": 2,
+            "nome": "trompete",
+            "preco": 1715.11,
+            "descricao": "Trompete Michael WTRM30N Sib Laqueado",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713223580/smxtkj3mn1dtrs9ybz6w.webp"
+        },
+        {
+            "id": 2,
+            "nome": "trompa",
+            "preco": 4685.90,
+            "descricao": "Trompa Alfa GGFH 250",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713224425/fufq69jpngkxvxto2brw.webp"
+        },
+        {
+            "id": 2,
+            "nome": "trombone",
+            "preco": 4569.25,
+            "descricao": "Trombone De Pisto New York Tb-200P Laqueado Com Case",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713224541/zteu33bmaso0bagycctl.webp"
+        },
+        {
+            "id": 2,
+            "nome": "tuba",
+            "preco": 11560.60,
+            "descricao": "Tuba Rotor Alfa GGTU 350",
+            "imagem": "https://res.cloudinary.com/dhaxh4qdu/image/upload/v1713224638/hl6wozpzbzmhz0diyt9p.webp"
+        }
+    ]
+}

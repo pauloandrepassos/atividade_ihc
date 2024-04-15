@@ -1,95 +1,58 @@
-import Image from "next/image";
+"use client"
+import Navbar from "@/components/nav/Navbar";
 import styles from "./page.module.css";
+import SubNavbar from "@/components/nav/SubNavbar";
+import ProductsSection from "@/components/produtos/ProductsSection";
+import produtosData from '@/api/BancoDeDados.json'
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [produtosCordas, setProdutosCordas] = useState([])
+  const [produtosMadeiras, setProdutosMadeiras] = useState([])
+  const [produtosSaxofones, setProdutosSaxofones] = useState([])
+  const [produtosMetais, setProdutosMetais] = useState([])
+  const [produtosMaisVendidos, setProdutosMaisVendidos] = useState([])
+
+  useEffect(() => {
+    setProdutosCordas(produtosData.instrumentos_cordas)
+    setProdutosMadeiras(produtosData.instrumentos_madeiras)
+    setProdutosSaxofones(produtosData.instrumentos_saxofones)
+    setProdutosMetais(produtosData.instrumentos_metais)
+    
+    const produtoMaisVendido1 = produtosData.instrumentos_cordas.find(produto => produto.id === 1)
+    const produtoMaisVendido2 = produtosData.instrumentos_madeiras.find(produto => produto.id === 1)
+    const produtoMaisVendido3 = produtosData.instrumentos_saxofones.find(produto => produto.id === 1)
+    const produtoMaisVendido4 = produtosData.instrumentos_cordas.find(produto => produto.id === 41)
+
+    setProdutosMaisVendidos([produtoMaisVendido1, produtoMaisVendido2, produtoMaisVendido3, produtoMaisVendido4])
+  }, [])
+
+
+  const produtos1 = []
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main>
+      <Navbar />
+      <SubNavbar />
+      <ProductsSection
+        section_name='DESTAQUES'
+        produtos={produtosMaisVendidos}
+      />
+      <ProductsSection 
+        section_name={'CORDAS'}
+        produtos={produtosCordas}
+      />
+      <ProductsSection
+        section_name={'MADEIRAS'}
+        produtos={produtosMadeiras}
+      />
+      <ProductsSection 
+        section_name={'SAXOFONES'}
+        produtos={produtosSaxofones}
+      />
+      <ProductsSection
+        section_name={'METAIS'}
+        produtos={produtosMetais}
+      />
     </main>
   );
 }
