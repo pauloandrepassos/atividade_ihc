@@ -11,8 +11,12 @@ export default function Navbar() {
                 <div className={styles.logo}>
                     <Image src={logo}/>
                 </div>
-                <BarraDePesquisa />
-                <LoginButton />
+                <div className={styles.search_bar}>
+                    <BarraDePesquisa />
+                </div>
+                <div className={styles.login_button}>
+                    <LoginButton/>
+                </div>
             </div>
         </nav>
     )
